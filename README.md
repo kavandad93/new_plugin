@@ -3,20 +3,56 @@
 WordPress hosting/service customer panel plugin.
 
 ## Installation
-Upload the plugin folder to wp-content/plugins and activate it.
+1. Upload `new_plugin` to `wp-content/plugins/`.
+2. Activate **WNat Client Area** from WordPress plugins.
+3. Create a page and add:
 
-## Shortcode
-Use `[wnat_panel]` on a page for the customer dashboard.
+```
+[wnat_panel]
+```
+
+## Shortcodes
+
+Customer dashboard:
+```
+[wnat_panel]
+```
+
+Products:
+```
+[wnat_products]
+```
+
+Tickets:
+```
+[wnat_tickets]
+```
 
 ## Features
-- Product management
-- Customer dashboard
-- Purchase requests
-- Services
-- Tickets
-- Secure WordPress architecture
 
-## Structure
-- includes/: PHP classes
-- assets/: CSS and JS
-- templates/: frontend views
+- Product custom post type
+- Customer dashboard
+- Purchase request database
+- User services database
+- Ticket system
+- Admin management menu
+- RTL frontend design
+- Nonce and sanitization security
+
+## Database Tables
+
+- wp_wnat_requests
+- wp_wnat_services
+- wp_wnat_tickets
+
+## Folder Structure
+
+```
+includes/  PHP classes
+assets/    CSS and JavaScript
+templates/ Frontend templates
+```
+
+## Version
+
+1.0.0
